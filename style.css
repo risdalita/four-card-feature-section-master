@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 15px;
+  background-color: bisque;
+}
+
+.container {
+  width: 100%;
+}
+
+.konteks {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.konteks h1 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.konteks h1 span {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.konteks p {
+  padding-top: 20px;
+  color: hsl(229, 6%, 66%);
+}
+
+/* cards */
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapped-card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.wrapped-card .card {
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-right: 20px;
+  width: 350px;
+  height: 230px;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 5px;
+}
+
+.color-card {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.info-card {
+  padding: 20px 25px;
+}
+
+.title-card {
+  font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.info-card p {
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+}
+
+.info-card img {
+  margin-top: 40px;
+  float: right;
+}
+
+/* akhir cards */
+
+/* versi mobile */
+
+@media (max-width: 375px) {
+  .cards {
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .card {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .konteks {
+    font-size: smaller;
+  }
+}
